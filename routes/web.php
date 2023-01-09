@@ -24,3 +24,8 @@ $router->post('/inputbarangs', 'BarangsController@store');
 $router->get('/barangs/{id}', 'BarangsController@show');
 $router->put('/editbarangs/{id}', 'BarangsController@update');
 $router->delete('/hapusbarangs/{id}', 'BarangsController@destroy');
+
+$router->get('/images', 'ImagesController@index');
+$router->post('/inputimages', 'ImagesController@store');
+$router->get('/images/{id}', 'ImagesController@show');
+$router->delete('/hapusimages/{id}', 'ImagesController@destroy');
